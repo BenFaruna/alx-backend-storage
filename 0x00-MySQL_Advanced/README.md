@@ -223,7 +223,7 @@ bye
 bob@dylan:~$
 ```
 
-File: [8-index_my_names.sql](./8-index_my_name.sql)
+File: [8-index_my_names.sql](./8-index_my_names.sql)
    
 9. Optimize search and score
 
