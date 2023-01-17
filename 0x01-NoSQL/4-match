@@ -1,0 +1,2 @@
+// find database entry with exact match
+db.school.find({ name: "Holberton school" })
