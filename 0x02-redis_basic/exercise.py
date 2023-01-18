@@ -23,3 +23,17 @@ class Cache:
             return fn(self._redis.get(key))
         return self._redis.get(key)
 
+    def get_str(self, key: str) -> str:
+        """returns the value of key from the db"""
+        value = self._redis.get(key)
+        return value.decode('utf-8')
+
+    def get_int(self, key: str) -> int:
+        """returns the integer value of key in db"""
+        value = self._redis.get(key)
+        try:
+            value = int(value.decode('utf-8'))
+        except Exception:
+            value = 0
+        return value
+
