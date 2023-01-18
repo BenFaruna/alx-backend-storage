@@ -1,0 +1,2 @@
+// use regex to find record with a startswith match
+db.school.find({ name: { $regex: "^Holberton" }})
